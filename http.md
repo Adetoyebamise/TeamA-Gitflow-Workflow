@@ -1,14 +1,11 @@
 # HTTP - HYPERTEXT TRANSFER PROTOCOL
----
 
 ## What is HTTP?
---- 
 
 
 HTTP is an acronym for Hypertext Transfer Protocol, literally a protocol used to transfer hypertext. What is a protocol and what is hypertext? In this context, a protocol is a system of rules that allow communication of information between different entities, like computers. Hypertext is a somewhat outdated word for text that is displayed on a computer screen that contains hyperlinks to other text. A hypertext transfer protocol is the set of rules, servers and browsers used to transfer web documents back and forth. Which is why every URL you type into a web browser starts with http. Hypertext Transfer Protocol (HTTP) is one of the most utilized protocols on the internet.
 
 ## PRINCIPLES OF HTTP
----
 
 1. It is written in plain language and human readable
 A HTTP request, response or message can be read and can easily be understood even if you don't necessarily know how the technology works. All HTTP request methods use simple human language verbs such as Get, post, put, delete etc.
@@ -20,7 +17,6 @@ HTTP as a stateless protocol means each individual request sent over the protoco
 Every action performed over HTTP starts with a request using one of the HTTP methods and ends with a response containing an HTTP status code saying what happened to the request along with the data like headers and content.
 
 ## VERSIONS OF HYPERTEXT TRANSFER PROTOCOL
----
 
 The HTTP protocol is constantly evolving and new features are added to make it work better, faster, and with new technologies.
 
@@ -45,7 +41,6 @@ HTTP/2 improved on HTTP/1.1 in a number of ways that allowed for speedier conten
 
 
 ## HTTP TERMINOLOGIES
----
 
 - Browser
 
@@ -85,7 +80,6 @@ A cache short-term computer memory where information is stored for easy retrieva
 A cookie is a small piece of data stored on the user's computer by the web browser while browsing a website. HTTP is a stateless protocol, meaning there is no link between two requests being sent between the client and the server. When we need to create a stateful session, we can use cookies, small pieces of information passed back and forth between the client and the server in the HTTP header to notify each party of the state the other is in.
 
 ## THE HTTP FLOW
----
 
 In an HTTP Flow, First, the browser opens a TCP connection to the server. This ensures data can be sent back and forth over the network and that the data sent from one end is put together the same way at the other end. If the connection happens over HTTPS, TLS certificates are exchanged to ensure only the computer and the server can encrypt and decrypt the transmitted data. This prevents anyone from being able to eavesdrop on the conversation between the client and the server and steal the data they are transmitting.
 
@@ -94,7 +88,6 @@ Second, the browser sends an HTTP message. This message always contains an HTTP 
 This response will contain an HTTP status message indicating what happened, headers with information about the response, and whatever data was requested. This data could be an HTML document or a style sheet or a JavaScript file or image or any other type of content used in a standard website. Finally, once the response is fully received, the TCP connection is closed. Since HTTP is stateless, we are now back to a clean slate. In most scenarios, the first HTTP transaction between a browser and a server is to retrieve a web document for a page or a view. This document typically holds links to CSS and JavaScript files as well as referenced elements like images. Each of these items is fetched from their server and brought into the browser using the same HTTP flow. HTTP/2 allows multiplexing, meaning multiple transactions can take place over the same TCP connection at the the same time. This new protocol also allows the server to push data to the browser. All of this improves performance and reduces the load time for webpages and views significantly. 
 
 ## HTTP HEADERS
----
 
 HTTP headers let the client and the server pass additional information with an HTTP request or response. An HTTP header consists of its case-insensitive name followed by a colon (:), then by its value. Whitespace before the value is ignored.
 
@@ -115,18 +108,16 @@ A response header is an HTTP header that can be used in an HTTP response and tha
 
 
 ## ANATOMY OF A URL
----
 
 A URL is a human-readable address, describing exactly where on the web and in what location on a server the information you are requesting is located. Below is an example of a URL 
 
-**https://facebook.com/sakarious/profile?u1232**
+> **https://facebook.com/sakarious/profile?u1232**
 
 The URL has two main pieces, a protocol declaration, and a Universal Resource Name, or URN. This URN provides the location of the resource. The protocol declaration states how we are accessing that resource using the http methods and transport layer. The URN itself is made up of several pieces. First, we have the host. This is the domain which is registered at a domain name service, or DNS and this domain points to a dedicated server IP address, somewhere on the web. Next, we have the implied, and usually invisible, connection port, stating which port we want to access on the server. For http connections, the default port is 80. For https connections, the default port is 443. As long as the server uses either of these ports, we don't see the port declared. If the server uses another port or we want to access another port, say 8080, that port can be declared using a colon, localhost:8080. After the host and port comes the resource path. This is the file location within the server. The default names for web documents are index.html and default.html. If we request a folder without a file specification, the server and browser automatically look for files named either index.html or default.html or index.php or similar and returns that file to us. If the file is called anything else, like about.html or contact.php, etc., the resource path needs to list the filename specifically.\s\s
 
 Finally, we have the optional URL query. This is one or more queries added to the end of the resource path that can perform further actions on the server. In some cases, such queries are used to track a user's ID, in others they're used to filter content or perform other actions. URL queries start with a question mark and then each query comprises an argument and a value like u=1232.
 
 ## HTTP METHODS
----
 
 Every request sent over the HTTP protocol includes a method,(or a verb). This method tells the server what type of action we want to perform with the request. There are a limited set of these methods available and some are more used than others. For standard web transactions, we use GET, POST, DELETE etc. Each of the HTTP methods has it's own request response pair and some require more information than others to work.
 
@@ -143,7 +134,6 @@ A DELETE request must contain the ID for the resource and an authorization heade
 HTTP also has three methods to get information from the server without really touching the content.They are HEAD, which returns just the HEAD section of the response, OPTIONS which returns a description of the communication options for the target resource, and TRACE, which creates a loop back of the request message effectively telling the client where the request ended up.
 
 ## HTTP STATUS MESSAGE
----
 
 Anytime an HTTP request is sent to a server, A response is received, even if the response is that something went wrong. This response starts with an HTTP status code, explaining what happened on the server and how your request was handled. The client can use these status codes to identify successes and failures and automatically respond with next steps. The HTTP response status codes are split into five main groupings. 1XX, 2XX, 3XX, 4XX, and 5XX codes.
 
