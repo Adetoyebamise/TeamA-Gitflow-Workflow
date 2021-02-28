@@ -11,15 +11,15 @@ Hypertext is outdated word fot text that is displayed on computer screen that co
 HTTP is a set of rule that is used to transfer web documents back and forth
 
 The HTTP are written in plain languages and are human readable we have examples like
--GET
--POST
--PUT
--DELETE
--CONNECT
--HEAD
--OPTION
--TRACE
--PATCH
+    -GET
+    -POST
+    -PUT
+    -DELETE
+    -CONNECT
+    -HEAD
+    -OPTION
+    -TRACE
+    -PATCH
 
 HTTP are stateless protocol i.e each individual request, sent over the protocol is unique - no memory of previous request, though concepts like session resolve this where usere and servers/browsers pass this information using cookies.
 
