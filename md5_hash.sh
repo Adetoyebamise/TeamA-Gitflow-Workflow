@@ -13,3 +13,5 @@ md5sum Wednesday_Board_Image.jpeg >> md5_hash_strings.txt
 md5sum Thursday_Board_Image.jpeg >> md5_hash_strings.txt
 
 md5sum Friday_Board_Image.jpeg >> md5_hash_strings.txt
+
+exit 0

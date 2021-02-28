@@ -13,3 +13,5 @@ sha1sum Wednesday_Board_Image.jpeg >> result_for_sha1.txt
 sha1sum Thursday_Board_Image.jpeg >> result_for_sha1.txt
 
 sha1sum Friday_Board_Image.jpeg >> result_for_sha1.txt
+
+exit 0
