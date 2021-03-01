@@ -5,7 +5,7 @@
 #this script generates a md5 hash string for all images.
 
 function GetImages(){
-	FILES=`cd Week_6_Board_Images|ls -1|sort|head -5`
+	FILES=`cd Week_6_Board_Images|ls -1|head -100`
 }
 
 
