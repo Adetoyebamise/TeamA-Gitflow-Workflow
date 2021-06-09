@@ -6,6 +6,7 @@
 ### Considering the content security policy and the strict transport securtiry here are some list of website that are secure and insecure.
 
 #### Websit that are well secure because of the header
+
 1 https://github.com
 
 2 https://bitbucket.org/
@@ -18,4 +19,4 @@
 
 2 https://punchng.com
 
-3 hhttps://bolt.eu/en-ng/
+3 https://bolt.eu/en-ng/
