@@ -22,11 +22,11 @@
 
 6 Search for commits that include a keyword.
 
-      git log -s"config menu_items"
+      git log -s"config.menu_items"
 
 7 List all git aliases
 
-      git config -l | grep alias | sed s...
+      git config -l | grep alias | sed 's|^alias\.//g'
 
 8 View the log for a specific date range
 
