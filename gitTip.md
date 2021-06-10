@@ -10,7 +10,7 @@
 
 3 Rewrite your last commit message
 
-      git commit -v--ammend
+      git commit -v --ammend
 
 4 Get rid of all untracked changes
 
